@@ -82,7 +82,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     background-image: url("plane.jpg");
-    height: 400px;
+    height: 500px;
 }
 
 .book-box {
@@ -91,4 +91,59 @@ input:focus {
     width: 60%;
     border-radius: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.notice-box {
+    /*border: 1mm solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 16px;
+}
+
+.notice-title {
+    /*border: 1mm solid red;*/
+    padding: 24px 0;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.notice-wrapper {
+    /*border: 1mm solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 70%;
+}
+
+.notice {
+    width: 30%;
+    height: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 30px;
+}
+
+.information-box {
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+footer {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15%;
+}
+
+.social-media {
+    display: flex;
+    gap: 24px;
+}
+
+.social-media > a {
+
 }
