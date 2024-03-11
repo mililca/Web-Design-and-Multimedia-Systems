@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-y:scroll
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+  }
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%;
+    padding: 24px 32px;
+}
+
+.header-links {
+    gap: 16px;
+}
+
+.logo {
+    
+}
+
+.search-section {
+    display: inline-flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-links > * {
+    padding: 0 24px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+input {
+	border: 1px solid #f1f1f1;
+	height: 40px;
+	padding: 0 10px;
+	width: 200px;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+}
+
+input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	outline: none;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background-color: #001449;
+    color: white;
+    font-weight: 600;
+	padding: 6px 16px;
+    border-radius: 30px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("plane.jpg");
+    height: 400px;
+}
+
+.book-box {
+    background-color: white;
+    height: 60%;
+    width: 60%;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
