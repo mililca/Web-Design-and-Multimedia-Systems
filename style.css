@@ -25,6 +25,10 @@ a {
     text-decoration: none; 
   }
 
+ ul {
+    list-style-type: none;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -35,10 +39,18 @@ a {
 
 .header-links {
     gap: 16px;
+    margin-left: 100px;
 }
 
 .logo {
-    
+    color: #db0a5b;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .search-section {
@@ -70,7 +82,7 @@ input:focus {
 .login {
     display: flex;
     align-items: center;
-    background-color: #001449;
+    background-color: #db0a5b;
     color: white;
     font-weight: 600;
 	padding: 6px 16px;
@@ -81,7 +93,8 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("plane.jpg");
+    background-image: url("img/plane.jpg");
+    background-size: 1900px;
     height: 500px;
 }
 
@@ -101,6 +114,7 @@ input:focus {
     justify-content: center;
     height: 500px;
     gap: 16px;
+    padding-bottom: 42px;
 }
 
 .notice-title {
@@ -127,16 +141,27 @@ input:focus {
 }
 
 .information-box {
-    height: 200px;
+    height: 250px;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-wrapper {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
 }
 
 footer {
-    height: 42px;
+    height: 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15%;
+    padding: 0px 24%;
 }
 
 .social-media {
@@ -146,4 +171,38 @@ footer {
 
 .social-media > a {
 
+}
+
+.list-title {
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.notice-title-top {
+    font-weight: 900;
+    font-size: 32px;
+    padding: 24px 0px;
+}
+
+.notice {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.notice-title {
+    padding: 8px 24px 0px 24px;
+}
+
+.notice-price {
+    padding: 0px 24px 24px 24px;
+}
+
+.notice > img {
+    height: 75%;
+    object-fit: cover;
 }
