@@ -10,19 +10,21 @@
     <div class="main">
         <header class="header">
             <div class="header-wrapper">
-                <div class="logo">
-                    <img src="img/logo.png" alt="singibook logo" height="38px">
-                    <div class="logo-text">Singibook</div>
-                </div>
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="singibook logo" height="38px">
+                        <div class="logo-text">Singibook</div>
+                    </div>
+                </a>
                 <div class="header-links">
-                    <a href="">Portfolio</a>
-                    <a href="">Gallery</a>
-                    <a href="">Blog</a>
-                    <a href="">Locations</a>
+                    <a href="/pages/portfolio.html" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                    <a href="/pages/gallery.html" target="_blank" rel="noopener noreferrer">Gallery</a>
+                    <a href="/pages/blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a href="/pages/locations.html" target="_blank" rel="noopener noreferrer">Locations</a>
                 </div>
                 <div class="search-section">
                     <input type="text" name="search" id="" placeholder="Search">
-                    <div class="login">Log In</div>
+                    <button class="login">Log In</button>
                 </div>
             </div>
         </header>
@@ -35,7 +37,27 @@
                     <button class="flight-status-flag">Flight Status</button>
                 </div>
                 <div class="book-window">
-                    <div class="book-flight"></div>
+                    <div class="book-flight">
+                        <div class="book-top">
+                            <div class="toggler">
+                                <div class="book-default">Book</div>
+                                <a href="" class="mileage-booking">Mileage Booking</a>
+                            </div>
+                        </div>
+                        <div class="book-bottom">
+                            <div class="book-bottom-left">
+                                <div class="city-out">SEL</div>
+                                <div class="swapper"></div>
+                                <div class="city-in">MUC</div>
+                            </div>
+                            <div class="book-bottom-right">
+                                <div class="departure-date"></div>
+                                <div class="passengers"></div>
+                                <div class="cabin-class"></div>
+                                <button class="ticket-search"></button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="my-trips"></div>
                     <div class="check-in"></div>
                     <div class="flight-status"></div>
@@ -45,60 +67,60 @@
         <div class="notice-box">
             <div class="notice-title-top">Hot Destinations</div>
             <div class="notice-wrapper">
-                <div class="notice">
-                    <img src="img/paris.jpg" alt="">
-                    <div class="notice-title">Paris</div>
-                    <div class="notice-price">from $66</div>
-                </div>
-                <div class="notice">
-                    <img src="img/seoul.jpg" alt="">
-                    <div class="notice-title">Seoul</div>
-                    <div class="notice-price">from $229</div>
-                </div>
-                <div class="notice">
-                    <img src="img/shanghai.jpeg" alt="">
-                    <div class="notice-title">Shanghai</div>
-                    <div class="notice-price">from $189</div>
-                </div>
+                <a href="https://en.wikipedia.org/wiki/Paris" target="_blank" rel="noopener noreferrer" class="notice">
+                        <img src="img/paris.jpg" alt="">
+                        <div class="notice-title">Paris</div>
+                        <div class="notice-price">from $66</div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Seoul" target="_blank" rel="noopener noreferrer" class="notice">
+                        <img src="img/seoul.jpg" alt="">
+                        <div class="notice-title">Seoul</div>
+                        <div class="notice-price">from $229</div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Shanghai" target="_blank" rel="noopener noreferrer" class="notice">
+                        <img src="img/shanghai.jpeg" alt="">
+                        <div class="notice-title">Shanghai</div>
+                        <div class="notice-price">from $189</div>
+                </a>
             </div>
         </div>
         <div class="information-box">
             <ul class="information-wrapper">
                 <ul class="about-wrapper">
                     <li class="list-title">About Singibook</li>
-                    <li>About Us</li>
-                    <li>Our Team</li>
-                    <li>Investor Relations</li>
-                    <li>Sustainability</li>
-                    <li>Newsroom</li>
+                    <a href="pages/about.html" target="_blank" rel="noopener noreferrer"><li>About Us</li></a>
+                    <a href=""><li>Our Team</li></a>
+                    <a href=""><li>Investor Relations</li></a>
+                    <a href=""><li>Sustainability</li></a>
+                    <a href=""><li>Newsroom</li></a>
                 </ul>
                 <ul class="cs-wrapper">
                     <li class="list-title">Customer Support</li>
-                    <li>Contact</li>
-                    <li>Customer Feedback</li>
-                    <li>Service Center</li>
+                    <a href="pages/contact.html" target="_blank" rel="noopener noreferrer"><li>Contact</li></a>
+                    <a href=""><li>Customer Feedback</li></a>
+                    <a href=""><li>Service Center</li></a>
                 </ul>
                 <ul class="tos-wrapper">
                     <li class="list-title">Terms & Policies</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Use</li>
+                    <a href=""><li>Privacy Policy</li></a>
+                    <a href=""><li>Terms of Use</li></a>
                 </ul>
                 <ul class="other-wrapper">
                     <li class="list-title">Others</li>
-                    <li>Video Gallery</li>
-                    <li>Jobs</li>
-                    <li>Documentation</li>
+                    <a href="pages/video.html" target="_blank" rel="noopener noreferrer"><li>Video Gallery</li></a>
+                    <a href=""><li>Jobs</li></a>
+                    <a href=""><li>Documentation</li></a>
                 </ul>
             </ul>
         </div>
         <footer class="footer">
             <div class="trademark">© 2001-2024 Singibook</div>
             <div class="social-media">
-                <a href=""><img src="img/github.png" alt="github logo" height="18px"></a>
-                <a href=""><img src="img/instagram.png" alt="instagram logo" height="18px"></a>
-                <a href=""><img src="img/twitter.png" alt="twitter logo" height="18px"></a>
-                <a href=""><img src="img/linkedin.png" alt="linkedin logo" height="18px"></a>
-                <a href=""><img src="img/youtube.png" alt="youtube logo" height="18px"></a>
+                <a href="https://github.com/mililca" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="github logo" height="18px"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="instagram logo" height="18px"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer"><img src="img/twitter.png" alt="twitter logo" height="18px"></a>
+                <a href="https://www.linkedin.com/in/natalia-shelepova-446879180/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.png" alt="linkedin logo" height="18px"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="img/youtube.png" alt="youtube logo" height="18px"></a>
             </div>
         </footer>
     </div>
