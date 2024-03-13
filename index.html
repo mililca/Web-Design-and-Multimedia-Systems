@@ -46,20 +46,37 @@
                         </div>
                         <div class="book-bottom">
                             <div class="book-bottom-left">
-                                <div class="city-out">
+                                <button class="city-out">
                                     <div class="city-out-code">SEL</div>
                                     <div class="city-out-full">Seoul</div>
-                                </div>
-                                <div class="swapper"></div>
-                                <div class="city-in">
+                                </button>
+                                <button class="swapper"><img src="img/swap.png" alt="" height="32px"></button>
+                                <button class="city-in">
                                     <div class="city-in-code">MUC</div>
                                     <div class="city-in-full">Munich</div>
-                                </div>
+                                </button>
                             </div>
                             <div class="book-bottom-right">
-                                <div class="departure-date"></div>
-                                <div class="passengers"></div>
-                                <div class="cabin-class"></div>
+                                <div class="departure-date">
+                                    <label for="d-date">Departure Date</label>
+                                    <input type="date" id="d-date">
+                                </div>
+                                <div class="arrival-date">
+                                    <label for="a-date">Arrival Date</label>
+                                    <input type="date" id="a-date">
+                                </div>
+                                <div class="passengers">
+                                    <label for="passengers">Passengers</label>
+                                    <input type="number" id="passengers" min="1" max="9">
+                                </div>
+                                <div class="cabin-class">
+                                    <label for="cabin">Cabin Type</label>
+                                    <select name="cabin" id="cabin">
+                                      <option value="javascript">Economy</option>
+                                      <option value="php">First</option>
+                                      <option value="java">Business</option>
+                                    </select>
+                                </div>
                                 <button class="ticket-search"></button>
                             </div>
                         </div>
