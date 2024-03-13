@@ -124,7 +124,6 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .book-wrapper {
-    background-color: #db0a5b;
     display: flex;
     flex-direction: column;
     height: 60%;
@@ -139,7 +138,7 @@ button, input[type="submit"], input[type="reset"] {
     background-color: white;
     height: 100%;
     width: 100%;
-    border-radius: 0px 24px 24px 24px;
+    border-radius: 0px 0px 24px 24px;
 }
 
 .notice-box {
@@ -244,26 +243,17 @@ li {
     transform: scale(1.8);
 }
 
-.flag-box {
-    display: flex;
-    flex-direction: row;
-}
-
 .flag-box > button {
     flex: 1 1 0px;
-    padding: 24px 0px;
-    font-size: 18px;
+    padding: 24px 0px 0px 0px;
+    font-size: 32px;
     font-weight: 700;
     border-radius: 20px 20px 0px 0px;
 }
 
-.my-trips-flag, .check-in-flag, .flight-status-flag {
-    background-color: #db0a5b;
-    color: white;
-}
-
 .book-flight-flag {
     background-color: white;
+    width: 100%;
 }
 
 ul > a:hover {
@@ -396,7 +386,7 @@ ul > a:hover {
     border: 1px solid #f1f1f1;
 	height: 40px;
 	padding: 0 16px;
-	width: 60px;
+	width: 120px;
     border-radius: 30px;
     background-color: #f1f1f1;
 }
