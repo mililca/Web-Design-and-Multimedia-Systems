@@ -243,12 +243,14 @@ li {
     transform: scale(1.8);
 }
 
-.flag-box > button {
+.flag-box > div {
     flex: 1 1 0px;
     padding: 24px 0px 0px 0px;
     font-size: 32px;
     font-weight: 700;
     border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .book-flight-flag {
@@ -287,7 +289,7 @@ ul > a:hover {
     justify-content: space-between;
     width: 23%;
     border-radius: 30px;
-    margin-left: 48px;
+    margin-left: 85px;
 }
 
 .book-default {
@@ -317,7 +319,7 @@ ul > a:hover {
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
-    margin-left: 48px;
+    margin-left: 32px;
     padding: 0px 16px;
 }
 
@@ -346,7 +348,7 @@ ul > a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex: 5 1 auto;
+    flex: 4 1 auto;
 }
 
 .city-in, .city-out {
@@ -357,6 +359,7 @@ ul > a:hover {
     align-items: center;
     padding: 16px 0px;
     border: 0.5mm solid white;
+    width: 100px;
 }
 
 .city-in-code, .city-out-code {
@@ -409,4 +412,51 @@ select {
 	width: 180px;
     border-radius: 30px;
     background-color: #f1f1f1;
+}
+
+.pop-up-departure-wrapper {
+    /*display: none;*/
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    left: 20%;
+    top: 60%;
+    border-radius: 20px;
+}
+
+.pop-up-departure {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    left: 20%;
+    top: 60%;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: rgba(65, 69, 73, 0.2) 0px 8px 24px;
+}
+
+.pop-up-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pop-up-departure > input {
+    border: 1px solid #f1f1f1;
+	height: 40px;
+	padding: 0 10px;
+    margin: 16px 0px;
+	width: 100%;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+}
+
+.pop-up-departure > a {
+    margin-top: 7%;
+}
+
+.pop-up-departure > a:hover {
+    color: #db0a5b;
 }
