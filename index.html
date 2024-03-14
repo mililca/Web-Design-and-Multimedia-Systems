@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singibook - Book your flight now!</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="main">
+        <div class="pop-up-departure-wrapper">
+            <div class="pop-up-departure" style="display:none;">
+                <div class="pop-up-title">Search Origin</div>
+                <input type="text" name="search" id="" placeholder="Search Destinations">
+                <a href="pages/portfolio.html" class="search-destinations">View All Destinations</a>
+            </div>
+        </div>
         <header class="header">
             <div class="header-wrapper">
                 <a href="index.html">
@@ -31,7 +39,7 @@
         <div class="book">
             <div class="book-wrapper">
                 <div class="flag-box">
-                    <button class="book-flight-flag">Book Flight</button>
+                    <div class="book-flight-flag">Book Flight</div>
                 </div>
                 <div class="book-window">
                     <div class="book-flight">
@@ -43,7 +51,7 @@
                         </div>
                         <div class="book-bottom">
                             <div class="book-bottom-left">
-                                <button class="city-out">
+                                <button class="city-out" onclick="showDiv()">
                                     <div class="city-out-code">SEL</div>
                                     <div class="city-out-full">Seoul</div>
                                 </button>
