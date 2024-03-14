@@ -42,13 +42,13 @@ h1 {
 
 .top {
     height: 350px;
-    padding: 32px 0px;
+    padding-top: 32px;
 }
 
 .weather-box {
     display: flex;
     flex-direction: column;
-    padding: 24px 0px;
+    padding-top: 24px;
     gap: 16px;
 }
 
@@ -63,6 +63,27 @@ h1 {
 	width: 40%;
     border-radius: 30px;
     background-color: #f1f1f1;
+}
+
+.weather-box-bottom {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+}
+
+.degrees {
+    flex: 1 1 auto;
+    height: 100%;
+    font-size: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    flex: 7 1 auto;
 }
 
 .main {
@@ -113,6 +134,10 @@ h1 {
     font-size: 18px;
     font-weight: 600;
     border-radius: 15px;
+}
+
+.example-box-details:hover {
+    background-color: #ff64a0;
 }
 
 footer {
