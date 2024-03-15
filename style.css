@@ -506,3 +506,7 @@ select {
 .pop-up-arrival > a:hover {
     color: #db0a5b;
 }
+
+input:invalid {
+    border: 1mm solid red;
+}
