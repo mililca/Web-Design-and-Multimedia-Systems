@@ -9,13 +9,6 @@
 </head>
 <body>
     <div class="main">
-        <div class="pop-up-departure-wrapper">
-            <div class="pop-up-departure" style="display:none;">
-                <div class="pop-up-title">Search Origin</div>
-                <input type="text" name="search" id="" placeholder="Search Destinations">
-                <a href="pages/portfolio.html" class="search-destinations">View All Destinations</a>
-            </div>
-        </div>
         <header class="header">
             <div class="header-wrapper">
                 <a href="index.html">
@@ -51,14 +44,14 @@
                         </div>
                         <div class="book-bottom">
                             <div class="book-bottom-left">
-                                <button class="city-out" onclick="showDiv()">
-                                    <div class="city-out-code">SEL</div>
-                                    <div class="city-out-full">Seoul</div>
+                                <button class="city-out" onclick="departureOpen()">
+                                    <div class="city-out-code">From</div>
+                                    <div class="city-out-full">Origin</div>
                                 </button>
-                                <button class="swapper"><img src="img/swap.png" alt="" height="32px"></button>
-                                <button class="city-in">
-                                    <div class="city-in-code">MUC</div>
-                                    <div class="city-in-full">Munich</div>
+                                <button class="swapper" onclick="swap(); chooseDeparture(); chooseArrival()"><img src="img/swap.png" alt="" height="32px"></button>
+                                <button class="city-in" onclick="arrivalOpen()">
+                                    <div class="city-in-code">To</div>
+                                    <div class="city-in-full">Arrival</div>
                                 </button>
                             </div>
                             <div class="book-bottom-right">
@@ -91,6 +84,46 @@
                     <div class="flight-status"></div>
                 </div>
             </div> 
+        </div>
+        <div class="pop-up-departure-wrapper" style="display:none;">
+            <div class="pop-up-departure">
+                <div class="pop-up-title">
+                    <h3>Search Origin</h3>
+                    <button class="close" onclick="departureClose(); chooseDeparture()"><img src="/img/close.png" alt="" height="18px"></button>
+                </div>
+                <label for="origin">Choose Origin</label>
+                <select name="origin" id="origin">
+                  <option value="paris">Paris</option>
+                  <option value="seoul">Seoul</option>
+                  <option value="moscow">Moscow</option>
+                  <option value="shanghai">Shanghai</option>
+                  <option value="belgrade">Belgrade</option>
+                  <option value="berlin">Berlin</option>
+                  <option value="tallinn">Tallinn</option>
+                  <option value="istanbul">Istanbul</option>
+                </select>
+                <a href="pages/portfolio.html" target="_blank" rel="noopener noreferrer" class="search-destinations">View All Destinations</a>
+            </div>
+        </div>
+        <div class="pop-up-arrival-wrapper" style="display:none;">
+            <div class="pop-up-arrival">
+                <div class="pop-up-title">
+                    <h3>Search Arrival</h3>
+                    <button class="close" onclick="arrivalClose(); chooseArrival()"><img src="/img/close.png" alt="" height="18px"></button>
+                </div>
+                <label for="arrival">Choose Arrival</label>
+                <select name="arrival" id="arrival">
+                  <option value="paris">Paris</option>
+                  <option value="seoul">Seoul</option>
+                  <option value="moscow">Moscow</option>
+                  <option value="shanghai">Shanghai</option>
+                  <option value="belgrade">Belgrade</option>
+                  <option value="berlin">Berlin</option>
+                  <option value="tallinn">Tallinn</option>
+                  <option value="istanbul">Istanbul</option>
+                </select>
+                <a href="pages/portfolio.html" target="_blank" rel="noopener noreferrer" class="search-destinations">View All Destinations</a>
+            </div>
         </div>
         <div class="notice-box">
             <div class="notice-title-top">Hot Destinations</div>

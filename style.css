@@ -10,14 +10,13 @@
 
 html {
   font-size: 62.5%;
-  overflow-y:scroll
+  overflow-y: scroll;
 }
 
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  height: 100%;
 }
 
 a {
@@ -415,39 +414,39 @@ select {
 }
 
 .pop-up-departure-wrapper {
-    /*display: none;*/
+    display: none;
     width: 500px;
     height: 200px;
-    position: fixed;
+    position: absolute;
     left: 20%;
-    top: 60%;
+    top: 500px;
     border-radius: 20px;
 }
 
 .pop-up-departure {
     display: flex;
     flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
     background-color: white;
     width: 500px;
-    height: 200px;
-    position: fixed;
-    left: 20%;
-    top: 60%;
+    height: 220px;
     border-radius: 20px;
     padding: 24px;
     box-shadow: rgba(65, 69, 73, 0.2) 0px 8px 24px;
 }
 
 .pop-up-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 24px;
     font-weight: 700;
 }
 
-.pop-up-departure > input {
+.pop-up-departure > select {
     border: 1px solid #f1f1f1;
 	height: 40px;
-	padding: 0 10px;
-    margin: 16px 0px;
 	width: 100%;
     border-radius: 30px;
     background-color: #f1f1f1;
@@ -458,5 +457,52 @@ select {
 }
 
 .pop-up-departure > a:hover {
+    color: #db0a5b;
+}
+
+.pop-up-arrival-wrapper {
+    display: none;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 32%;
+    top: 500px;
+    border-radius: 20px;
+}
+
+.pop-up-arrival {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    background-color: white;
+    width: 500px;
+    height: 220px;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: rgba(65, 69, 73, 0.2) 0px 8px 24px;
+}
+
+.pop-up-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pop-up-arrival > select {
+    border: 1px solid #f1f1f1;
+	height: 40px;
+	width: 100%;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+}
+
+.pop-up-arrival > a {
+    margin-top: 7%;
+}
+
+.pop-up-arrival > a:hover {
     color: #db0a5b;
 }
