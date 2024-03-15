@@ -134,8 +134,28 @@ button, input[type="submit"], input[type="reset"] {
     align-items: center;
 }
 
-h1 {
-    padding: 48px 0px;
+th {
+    padding: 8px;
+    background-color: #db0a5b;
+    color: white;
+}
+
+table {
+    padding-bottom: 16px;
+    width: 900px;
+}
+
+h2 {
+    padding-top: 32px;
+}
+
+h3 {
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.moscow {
+    padding-bottom: 32px;
 }
 
 .main-news {
