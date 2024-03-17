@@ -113,6 +113,9 @@ function bookTicketDeparture() {
     let dDate = document.forms["myForm"]["departureDate"].value;
     if(dDate == ""){
         alert("Please choose departure date");
+        return false;
+    } else {
+        return true;
     }
 }
 
@@ -120,6 +123,9 @@ function bookTicketReturn() {
     let aDate = document.forms["myForm"]["returnDate"].value;
     if(aDate == ""){
         alert("Please choose return date");
+        return false;
+    } else {
+        return true;
     }
 }
 
@@ -130,6 +136,9 @@ function checkCity(){
     let arrivalValue = arrival.value;
     if(outValue==arrivalValue){
         alert("Origin and arrival cities can not be the same!");
+        return false;
+    } else {
+        return true;
     }
 }
 
@@ -139,6 +148,15 @@ function bookingTicket(){
     const departureDate = document.forms["myForm"]["departureDate"].value;
     const returnDate = document.forms["myForm"]["returnDate"].value;
     const cabinClass = document.getElementById("cabin");
-    console.log(departureCity.value, arrivalCity.value, departureDate, returnDate, cabinClass.value);
 }
 
+function dataValidation(){
+    if(checkCity() == true && bookTicketDeparture() == true && bookTicketReturn() == true){
+        /*open popup with ticket information*/
+        hrefFunction();
+    }
+}
+
+function hrefFunction(){
+    window.location.href = "/pages/booking.html";
+}
