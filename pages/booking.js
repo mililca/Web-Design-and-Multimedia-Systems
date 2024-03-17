@@ -67,6 +67,16 @@ function checkPhone() {
 
 function validateData(){
     if(checkFirstName() == true && checkLastName() == true && checkPassport() == true && checkPhone() == true && checkEmail() == true){
-        alert("Login Successful");
+        let fName = document.forms["myFormOne"]["fname"].value;
+        let lName = document.forms["myFormOne"]["lname"].value;
+        let passport = document.forms["myFormOne"]["passport"].value;
+        let phone = document.forms["myFormTwo"]["phone"].value;
+        let email = document.forms["myFormTwo"]["email"].value;
+        var departureCity = localStorage.getItem('departureCity');
+        var arrivalCity = localStorage.getItem('arrivalCity');
+        var departureDate = localStorage.getItem('departureDate');
+        var returnDate = localStorage.getItem('returnDate');
+        var cabinClass = localStorage.getItem('cabinClass');
+        alert(` First Name: ${fName}\n Last Name: ${lName}\n Passport Number: ${passport}\n Phone Number: ${phone}\n Email: ${email}\n From: ${departureCity}\n To: ${arrivalCity}\n Departure Date: ${departureDate}\n Return Date: ${returnDate}\n Cabin Class: ${cabinClass}`);
     }
 }
