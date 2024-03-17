@@ -219,7 +219,7 @@ span {
 }
 
 input:invalid{
-    border: #db0a5b;
+    background-color: #ffdfdf;
 }
 
 footer {
