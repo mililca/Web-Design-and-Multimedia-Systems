@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singibook - Login</title>
     <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
 </head>
 <body>
     <header class="header">
@@ -30,16 +31,16 @@
     <div class="wrapper">
         <div class="wrapper-main">
             <h2>Log In</h2>
-            <form action="#" method="POST" enctype="multipart/form-data">
+            <form action="" name="myForm" id="myForm">
     
                 <div class="form-block">
-                  <label for="name">First Name</label>
-                  <input type="text" name="name" id="name" placeholder="Your first name" required/>
+                  <label for="fname">First Name</label>
+                  <input type="text" name="fname" id="fname" placeholder="Your first name" required/>
                 </div>
 
                 <div class="form-block">
-                    <label for="name">Last Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your last name" required/>
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Your last name" required/>
                   </div>
                   
                 <div class="form-block">
@@ -51,12 +52,11 @@
                     <label for="password">Your Password</label>
                     <input type="password" name="password" id="password" placeholder="Password" required/>
                   </div>
-                  
-                <div class="form-block">  
-                  <button type="submit">Log In</button>
-                </div>
                 
             </form>
+            <div class="form-block">  
+                <button onclick="logIn()">Log In</button>
+              </div>
             <div class="info">
                 <h3>Having trouble logging in?</h3>
                 <p>Contact our <a href="/pages/contact.html" target="_blank" rel="noopener noreferrer">customer support service</a> to regain access to your account</p>
