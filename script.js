@@ -110,15 +110,35 @@ function swap() {
 }
 
 function bookTicketDeparture() {
-    const dDate = document.forms["myForm"]["departureDate"].value;
+    let dDate = document.forms["myForm"]["departureDate"].value;
     if(dDate == ""){
         alert("Please choose departure date");
     }
 }
 
 function bookTicketReturn() {
-    const dDate = document.forms["myForm"]["returnDate"].value;
-    if(dDate == ""){
+    let aDate = document.forms["myForm"]["returnDate"].value;
+    if(aDate == ""){
         alert("Please choose return date");
     }
 }
+
+function checkCity(){
+    let out = document.getElementById("origin");
+    let outValue = out.value;
+    let arrival = document.getElementById("arrival");
+    let arrivalValue = arrival.value;
+    if(outValue==arrivalValue){
+        alert("Origin and arrival cities can not be the same!");
+    }
+}
+
+function bookingTicket(){
+    const departureCity = document.getElementById("origin");
+    const arrivalCity = document.getElementById("arrival");
+    const departureDate = document.forms["myForm"]["departureDate"].value;
+    const returnDate = document.forms["myForm"]["returnDate"].value;
+    const cabinClass = document.getElementById("cabin");
+    console.log(departureCity.value, arrivalCity.value, departureDate, returnDate, cabinClass.value);
+}
+

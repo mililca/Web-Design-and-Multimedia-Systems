@@ -38,7 +38,7 @@
                     <div class="book-flight">
                         <div class="book-top">
                             <div class="toggler">
-                                <button class="book-default" onclick="bookTicketDeparture(); bookTicketReturn()">Book</button>
+                                <button class="book-default" onclick="checkCity(); bookTicketDeparture(); bookTicketReturn(); bookingTicket()">Book</button>
                                 <a href="/pages/login.html" class="mileage-booking" target="_blank" rel="noopener noreferrer">Mileage Booking</a>
                             </div>
                         </div>
@@ -67,9 +67,9 @@
                                     <div class="cabin-class">
                                         <label for="cabin">Cabin Type</label>
                                         <select name="cabin" id="cabin" required>
-                                          <option value="javascript">Economy</option>
-                                          <option value="php">First</option>
-                                          <option value="java">Business</option>
+                                          <option value="economy">Economy</option>
+                                          <option value="first">First</option>
+                                          <option value="business">Business</option>
                                         </select>
                                     </div>
                                 </form>
