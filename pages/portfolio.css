@@ -31,6 +31,14 @@ a {
 h1 {
     padding: 8px;
 }
+select {
+    border: 1px solid #f1f1f1;
+	height: 40px;
+	width: 100%;
+    border-radius: 30px;
+    background-color: #f1f1f1;
+    padding: 0px 16px;
+}
 
 .wrapper {
     display: flex;
@@ -71,7 +79,39 @@ h1 {
     height: 120px;
 }
 
+.select-city {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
 .degrees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #db0a5b;
+    color: white;
+    font-weight: 600;
+	padding: 6px 16px;
+    border-radius: 30px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.check:hover {
+    background-color: #ff5e9c;
+    cursor: pointer;
+}
+
+#temperature {
     flex: 1 1 auto;
     height: 100%;
     font-size: 68px;
@@ -80,10 +120,20 @@ h1 {
     align-items: center;
 }
 
+.weather-fetch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
 .weather-details {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     flex: 7 1 auto;
+    padding-left: 10%;
+    gap: 8px;
 }
 
 .main {

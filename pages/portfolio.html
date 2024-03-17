@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singibook - Portfolio</title>
     <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -12,10 +13,42 @@
             <h1>Destination Portfolio</h1>
             <div class="weather-box">
                 <label for="weather">Check current weather for your destination:</label>
-                <input type="text" id="weather">
+                <div class="select-city">
+                    <select name="destinations" id="destinations">
+                        <option value="Paris">Paris</option>
+                        <option value="Seoul">Seoul</option>
+                        <option value="Moscow">Moscow</option>
+                        <option value="Shanghai">Shanghai</option>
+                        <option value="Belgrade">Belgrade</option>
+                        <option value="Berlin">Berlin</option>
+                        <option value="Tallinn">Tallinn</option>
+                        <option value="Istanbul">Istanbul</option>
+                      </select>
+                    <button class="check">Check</button>
+                </div>
                 <div class="weather-box-bottom">
-                    <div class="degrees">11°</div>
-                    <div class="weather-details">API information will be here</div>
+                    <div class="degrees">
+                        <h5>Current temperature:</h5>
+                        <div id="temperature">°</div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="weather-fetch">
+                            <h5>Current time:</h5>
+                            <p id="time"></p>
+                        </div>
+                        <div class="weather-fetch">
+                            <h5>Timezone abbreviation:</h5>
+                            <p id="timezoneAbbreviation"></p>
+                        </div>
+                        <div class="weather-fetch">
+                            <h5>Apparent temperature:</h5>
+                            <p id="apparentTemperature"></p>
+                        </div>
+                        <div class="weather-fetch">
+                            <h5>Humidity</h5>
+                            <p id="humidity"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
