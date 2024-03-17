@@ -15,42 +15,42 @@ function arrivalClose () {
 }
 
 function chooseDeparture () {
-    if(document.getElementById('origin').value == "paris") {
+    if(document.getElementById('origin').value == "Paris") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Paris';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'CDG';
-   } else if(document.getElementById('origin').value == "seoul") {
+   } else if(document.getElementById('origin').value == "Seoul") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Seoul';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'ICN';
-   } else if(document.getElementById('origin').value == "moscow") {
+   } else if(document.getElementById('origin').value == "Moscow") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Moscow';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'SVO';
-    } else if(document.getElementById('origin').value == "shanghai") {
+    } else if(document.getElementById('origin').value == "Shanghai") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Shanghai';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'PVG';
-   } else if(document.getElementById('origin').value == "belgrade") {
+   } else if(document.getElementById('origin').value == "Belgrade") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Belgrade';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'BEG';
-    } else if(document.getElementById('origin').value == "berlin") {
+    } else if(document.getElementById('origin').value == "Berlin") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Berlin';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'BER';
-    } else if(document.getElementById('origin').value == "tallinn") {
+    } else if(document.getElementById('origin').value == "Tallinn") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Tallinn';
         const originCode = document.querySelector('.city-out-code');
         originCode.innerText = 'TLL';
-    } else if(document.getElementById('origin').value == "istanbul") {
+    } else if(document.getElementById('origin').value == "Istanbul") {
         const origin = document.querySelector('.city-out-full');
         origin.innerText = 'Istanbul';
         const originCode = document.querySelector('.city-out-code');
@@ -59,42 +59,42 @@ function chooseDeparture () {
 }
 
 function chooseArrival () {
-    if(document.getElementById('arrival').value == "paris") {
+    if(document.getElementById('arrival').value == "Paris") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Paris';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'CDG';
-   } else if(document.getElementById('arrival').value == "seoul") {
+   } else if(document.getElementById('arrival').value == "Seoul") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Seoul';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'ICN';
-   } else if(document.getElementById('arrival').value == "moscow") {
+   } else if(document.getElementById('arrival').value == "Moscow") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Moscow';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'SVO';
-    } else if(document.getElementById('arrival').value == "shanghai") {
+    } else if(document.getElementById('arrival').value == "Shanghai") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Shanghai';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'PVG';
-   } else if(document.getElementById('arrival').value == "belgrade") {
+   } else if(document.getElementById('arrival').value == "Belgrade") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Belgrade';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'BEG';
-    } else if(document.getElementById('arrival').value == "berlin") {
+    } else if(document.getElementById('arrival').value == "Berlin") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Berlin';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'BER';
-    } else if(document.getElementById('arrival').value == "tallinn") {
+    } else if(document.getElementById('arrival').value == "Tallinn") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Tallinn';
         const arrivalCode = document.querySelector('.city-in-code');
         arrivalCode.innerText = 'TLL';
-    } else if(document.getElementById('arrival').value == "istanbul") {
+    } else if(document.getElementById('arrival').value == "Istanbul") {
         const arrival = document.querySelector('.city-in-full');
         arrival.innerText = 'Istanbul';
         const arrivalCode = document.querySelector('.city-in-code');
@@ -152,7 +152,16 @@ function bookingTicket(){
 
 function dataValidation(){
     if(checkCity() == true && bookTicketDeparture() == true && bookTicketReturn() == true){
-        /*open popup with ticket information*/
+        const departureCity = document.getElementById("origin").value;
+        const arrivalCity = document.getElementById("arrival").value;
+        const departureDate = document.forms["myForm"]["departureDate"].value;
+        const returnDate = document.forms["myForm"]["returnDate"].value;
+        const cabinClass = document.getElementById("cabin").value;
+        localStorage.setItem("departureCity", departureCity);
+        localStorage.setItem("arrivalCity", arrivalCity);
+        localStorage.setItem("departureDate", departureDate);
+        localStorage.setItem("returnDate", returnDate);
+        localStorage.setItem("cabinClass", cabinClass);
         hrefFunction();
     }
 }
