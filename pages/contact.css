@@ -219,6 +219,10 @@ span {
     border-radius: 30px;
 }
 
+input:invalid{
+    background-color: #ffdfdf;
+}
+
 .form-block > button:hover {
     background-color: #ff5e9c;
 }
