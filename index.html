@@ -38,7 +38,7 @@
                     <div class="book-flight">
                         <div class="book-top">
                             <div class="toggler">
-                                <div class="book-default">Book</div>
+                                <button class="book-default" onclick="bookTicketDeparture(); bookTicketReturn()">Book</button>
                                 <a href="/pages/login.html" class="mileage-booking" target="_blank" rel="noopener noreferrer">Mileage Booking</a>
                             </div>
                         </div>
@@ -55,27 +55,25 @@
                                 </button>
                             </div>
                             <div class="book-bottom-right">
-                                <div class="departure-date">
-                                    <label for="d-date">Departure Date</label>
-                                    <input type="date" id="d-date" min="2024-03-15" max="2025-12-14" required>
-                                </div>
-                                <div class="arrival-date">
-                                    <label for="a-date">Arrival Date</label>
-                                    <input type="date" id="a-date" min="2024-03-16" max="2025-12-14" required>
-                                </div>
-                                <div class="passengers">
-                                    <label for="passengers">Passengers</label>
-                                    <input type="number" id="passengers" min="1" max="9" required>
-                                </div>
-                                <div class="cabin-class">
-                                    <label for="cabin">Cabin Type</label>
-                                    <select name="cabin" id="cabin" required>
-                                      <option value="javascript">Economy</option>
-                                      <option value="php">First</option>
-                                      <option value="java">Business</option>
-                                    </select>
-                                </div>
-                                <button class="ticket-search"></button>
+                                <form action="" class="book-bottom-right" name="myForm">
+                                    <div class="departure-date">
+                                        <label for="d-date">Departure Date</label>
+                                        <input type="date" id="d-date" name="departureDate" min="2024-03-18" max="2025-12-14" required>
+                                    </div>
+                                    <div class="arrival-date">
+                                        <label for="a-date">Return Date</label>
+                                        <input type="date" id="a-date" name="returnDate" min="2024-03-16" max="2025-12-14" required>
+                                    </div>
+                                    <div class="cabin-class">
+                                        <label for="cabin">Cabin Type</label>
+                                        <select name="cabin" id="cabin" required>
+                                          <option value="javascript">Economy</option>
+                                          <option value="php">First</option>
+                                          <option value="java">Business</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <button class="ticket-search" ></button>
                             </div>
                         </div>
                     </div>

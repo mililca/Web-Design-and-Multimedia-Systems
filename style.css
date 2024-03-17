@@ -293,7 +293,7 @@ ul > a:hover {
 
 .book-default {
     background-color: #db0a5b;
-    padding: 12px 28px;
+    padding: 0px 28px;
     border-radius: 30px;
     color: white;
     font-weight: 700;
@@ -508,5 +508,5 @@ select {
 }
 
 input:invalid {
-    border: 1mm solid red;
+    background-color: rgb(255, 230, 230);
 }

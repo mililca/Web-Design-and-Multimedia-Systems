@@ -108,3 +108,17 @@ function swap() {
     document.getElementById('arrival').value = origin;
     document.getElementById('origin').value = arrival;
 }
+
+function bookTicketDeparture() {
+    const dDate = document.forms["myForm"]["departureDate"].value;
+    if(dDate == ""){
+        alert("Please choose departure date");
+    }
+}
+
+function bookTicketReturn() {
+    const dDate = document.forms["myForm"]["returnDate"].value;
+    if(dDate == ""){
+        alert("Please choose return date");
+    }
+}
